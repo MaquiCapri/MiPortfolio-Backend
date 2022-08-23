@@ -6,7 +6,7 @@ import javax.validation.constraints.NotBlank;
 
 public class dtoExperiencia {
     @NotBlank
-    private String nombreE;
+    private String fecha;
     
     @NotBlank
     private String descriptionE;
@@ -14,19 +14,19 @@ public class dtoExperiencia {
     public dtoExperiencia() {
     }
 
-    public dtoExperiencia(String nombreE, String descriptionE) {
-        this.nombreE = nombreE;
+    public dtoExperiencia(String fecha, String descriptionE) {
+        this.fecha = fecha;
         this.descriptionE = descriptionE;
     }
     
     //getter and setter
 
-    public String getNombreE() {
-        return nombreE;
+    public String getFecha() {
+        return fecha;
     }
 
-    public void setNombreE(String nombreE) {
-        this.nombreE = nombreE;
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
     public String getDescriptionE() {

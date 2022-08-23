@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 //ademas de traer los metodos de jpaR crear dos metodos mas
 public interface RExperiencia extends JpaRepository<Experiencia, Integer> {
-   public Optional<Experiencia> findByNombreE(String nombreE);
-   public boolean existsByNombreE(String nombreE);
+   public Optional<Experiencia> findByFecha(String fecha);
+   public boolean existsByFecha(String fecha);
 }

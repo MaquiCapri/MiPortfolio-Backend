@@ -52,19 +52,19 @@ public class CSkills {
         sSkills.delete(id);
         return new ResponseEntity(new Mensaje("producto eliminado"), HttpStatus.OK);
     }
-    
-    @PostMapping("/create")
-   public ResponseEntity<?> create(@RequestBody dtoSkills dtoskills){
+    //voy hacer que se puedan agregar skills
+    //@PostMapping("/create")
+   //public ResponseEntity<?> create(@RequestBody dtoSkills dtoskills){
        //VALIDACIONES
        //if(StringUtils.isBlank(dtoskills.getPorcentaje()))
          //   return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
   
     
-    Skills skills = new Skills(dtoskills.getPorcentaje(), dtoskills.getTexto());
-    sSkills.save(skills);
+    //Skills skills = new Skills(dtoskills.getPorcentaje(), dtoskills.getTexto());
+    //sSkills.save(skills);
     
-    return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
-   }
+   // return new ResponseEntity(new Mensaje("Skill agregado"), HttpStatus.OK);
+   //}
    
    
    @PutMapping("/update/{id}")
@@ -82,6 +82,6 @@ public class CSkills {
    skills.setTexto((dtoskills.getTexto()));
     
     sSkills.save(skills);
-    return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
+    return new ResponseEntity(new Mensaje("Skill actualizado"), HttpStatus.OK);
    }
 }
