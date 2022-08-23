@@ -9,14 +9,14 @@ public class dtoExperiencia {
     private String fecha;
     
     @NotBlank
-    private String descriptionE;
+    private String curso;
 
     public dtoExperiencia() {
     }
 
-    public dtoExperiencia(String fecha, String descriptionE) {
+    public dtoExperiencia(String fecha, String curso) {
         this.fecha = fecha;
-        this.descriptionE = descriptionE;
+        this.curso = curso;
     }
     
     //getter and setter
@@ -29,12 +29,12 @@ public class dtoExperiencia {
         this.fecha = fecha;
     }
 
-    public String getDescriptionE() {
-        return descriptionE;
+    public String getCurso() {
+        return curso;
     }
 
-    public void setDescriptionE(String descriptionE) {
-        this.descriptionE = descriptionE;
+    public void setCurso(String curso) {
+        this.curso = curso;
     }
     
     
