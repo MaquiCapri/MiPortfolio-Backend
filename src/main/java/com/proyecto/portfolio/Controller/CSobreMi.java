@@ -1,12 +1,10 @@
 
 package com.proyecto.portfolio.Controller;
 
-import com.proyecto.portfolio.Dto.dtoExperiencia;
+
 import com.proyecto.portfolio.Dto.dtoSobreMi;
-import com.proyecto.portfolio.Entity.Experiencia;
 import com.proyecto.portfolio.Entity.SobreMi;
 import com.proyecto.portfolio.Security.Controller.Mensaje;
-import com.proyecto.portfolio.Service.SExperiencia;
 import com.proyecto.portfolio.Service.SSobreMi;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
