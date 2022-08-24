@@ -42,4 +42,8 @@ public class SSobreMi {
      public boolean existsByFecha(String perfil){
          return rSobreMi.existsByPerfil(perfil);
      }
+
+    public SobreMi findSobreMi(Integer integer) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

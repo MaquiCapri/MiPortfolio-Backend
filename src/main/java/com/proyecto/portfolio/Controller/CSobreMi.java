@@ -82,5 +82,10 @@ public class CSobreMi {
     sSobreMi.save(sobreMi);
     return new ResponseEntity(new Mensaje("Texto actualizado"), HttpStatus.OK);
    }
+   
+    @GetMapping("/traer/perfil")
+  public SobreMi findSobreMi(){
+      return sSobreMi.findSobreMi((Integer)1);
+  }
   
 }
